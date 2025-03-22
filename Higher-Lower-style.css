@@ -65,6 +65,11 @@ p {
   color: white;
   cursor: pointer;
   border-radius: 15px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button:hover{
+  opacity: 0.6;
 }
 
 #higher {
