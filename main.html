@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Higher-Lower</title>
-  <link rel="stylesheet" href="Higher-Lower-style.css">
+  <link rel="stylesheet" href="Higher-Lower-style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1><b>Higher-Lower</b></h1>
+<main class="container">
+  <h1>Higher-Lower</h1>
+  <p class="subtitle">Ist der Wert höher oder niedriger als der vorherige? Teste dein Wissen!</p>
 
-<p>Jedes Bild hat eine Zahl - sei es ein Preis, eine Bewertung oder eine Anzahl. Ist sie höher oder niedriger als die letzte? Finde es heraus und stelle deinen Rekord auf!</p>
+  <div class="card-wrapper">
+    <div class="card">
+      <img src="Zugspitze.jpeg" alt="Zugspitze" />
+      <p class="label">Zugspitze: 2962m</p>
+    </div>
 
-<div class="clearfix">
-  <div class="image-container">
-    <img class="Bild-links" src="Zugspitze.jpeg" alt="Zugspitze">
-    <p class="Daten">Zugspitze: 2962m</p>
+    <div class="card">
+      <img src="Schneefernerkopf_1.jpg" alt="Schneefernerkopf" />
+      <p class="label">Schneefernerkopf: ?</p>
+    </div>
   </div>
 
-  <div class="image-container">
-    <img class="Bild-rechts" src="Schneefernerkopf_1.jpg" alt="Schneefernkopf">
-    <p class = "Daten">Schneefernerkopf: ?</p>
+  <div class="button-wrapper">
+    <button id="higher">Higher</button>
+    <button id="lower">Lower</button>
   </div>
-</div>
 
-<div class="button-container">
-  <button class="button" id="higher">Higher</button>
-  <button class="button" id="lower">Lower</button>
-</div>
+  <div class="score-box">
+    <span>Punkte:</span>
+    <span id="score">0</span>
+    <div id="message" class="message"></div>
+  </div>
+
+  <div class="highscore-container">
+    <span>Highscore: </span><span id="highscore">0</span>
+  </div>
+
+</main>
 
 <script src="script.js"></script>
 </body>
