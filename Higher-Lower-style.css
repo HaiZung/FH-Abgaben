@@ -38,7 +38,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Zeilenumbrüche ermöglichen */
   margin-bottom: 40px;
 }
 
@@ -115,8 +115,7 @@ button:hover {
     text-align: center;
     min-width: 240px;
   }
-
-  /* Highscore Container nach unten links verschieben */
+  
   .highscore-container {
     position: absolute;
     bottom: 20px;
@@ -126,7 +125,6 @@ button:hover {
     font-weight: 600;
   }
 
-  /* Container für den gesamten Inhalt */
   .container {
     position: relative;  /* Stellt sicher, dass die absolute Positionierung des Highscores funktioniert */
     width: 100%;
@@ -134,23 +132,20 @@ button:hover {
     text-align: center;
   }
 
-  /* Abstand der Buttons und der Score-Box */
   .button-wrapper {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 20px; /* Für zusätzliche Trennung */
+    margin-top: 20px; /* Für Abstand */
   }
 
   @media (max-width: 600px) {
-    /* Der Punktestand Box soll jetzt weiter nach unten verschoben werden */
     .score-box {
-      margin-top: 40px; /* Mehr Abstand nach oben */
-      margin-bottom: 40px; /* Abstand unten */
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
 
-    /* Highscore am unteren linken Rand positionieren */
     .highscore-container {
       position: absolute;
       bottom: 20px;
