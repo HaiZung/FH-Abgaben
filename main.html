@@ -13,12 +13,12 @@
   <p class="subtitle">Ist der Wert höher oder niedriger als der vorherige? Teste dein Wissen!</p>
 
   <div class="card-wrapper">
-    <div class="card">
+    <div class="card" id="card1">
       <img src="Zugspitze.jpeg" alt="Zugspitze" />
       <p class="label">Zugspitze: 2962m</p>
     </div>
 
-    <div class="card">
+    <div class="card" id="card2">
       <img src="Schneefernerkopf_1.jpg" alt="Schneefernerkopf" />
       <p class="label">Schneefernerkopf: ?</p>
     </div>
@@ -30,17 +30,15 @@
   </div>
 
   <div class="score-box">
-    <span>Punkte:</span>
-    <span id="score">0</span>
+    <span>Punkte: </span><span id="score" class="score-display">0</span>
     <div id="message" class="message"></div>
   </div>
 
   <div class="highscore-container">
-    <span>Highscore: </span><span id="highscore">0</span>
+    Highscore: <span id="highscore">0</span>
   </div>
-
 </main>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
